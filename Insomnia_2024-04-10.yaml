@@ -1,0 +1,462 @@
+_type: export
+__export_format: 4
+__export_date: 2024-04-10T15:26:29.634Z
+__export_source: insomnia.desktop.app:v2023.5.6
+resources:
+  - _id: req_bddf7a42a1e74a958f1efbfae95a9573
+    parentId: fld_42d7ee9d463846f780f894498c071210
+    modified: 1712759181869
+    created: 1712754477226
+    url: http://localhost:8080/pilotes
+    name: Lister les pilotes
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237341
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_42d7ee9d463846f780f894498c071210
+    parentId: wrk_7d980d49b7054b038cb19a60215ea361
+    modified: 1712759341709
+    created: 1712754477223
+    name: Pilotes
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1712754232098
+    _type: request_group
+  - _id: wrk_7d980d49b7054b038cb19a60215ea361
+    parentId: null
+    modified: 1712731651514
+    created: 1712731651514
+    name: Visiplus SpingBoot
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_4ab5da88df7c494388ac69632c85c3c6
+    parentId: fld_42d7ee9d463846f780f894498c071210
+    modified: 1712760996393
+    created: 1712754477234
+    url: http://localhost:8080/pilotes/2/voiture
+    name: Associer un pilote à une voiture
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 56
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237291
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d47590ca8d8349eba33a5f2325e8e4ac
+    parentId: fld_42d7ee9d463846f780f894498c071210
+    modified: 1712759478427
+    created: 1712754477231
+    url: http://localhost:8080/pilotes
+    name: Créer un pilote
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nom" : "John Doe"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237266
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2ab33b3eddfc46d396fc189c8752f175
+    parentId: fld_42d7ee9d463846f780f894498c071210
+    modified: 1712760940322
+    created: 1712754477237
+    url: http://localhost:8080/pilotes/1552
+    name: Supprimer un pilote
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237253.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d12a60924ca144d28dfe8a56b0112930
+    parentId: fld_42d7ee9d463846f780f894498c071210
+    modified: 1712759305844
+    created: 1712754477228
+    url: http://localhost:8080/pilotes/2
+    name: Optionnel - Récupérer les infos d'un pilote
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237241
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d53ad1dd28344e689a0bb27ff340a50b
+    parentId: fld_dfaa50d2d0d14fdd81cd01a326cf8554
+    modified: 1712759277076
+    created: 1712731654258
+    url: http://localhost:8080/voitures
+    name: Lister les voitures
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237341
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_dfaa50d2d0d14fdd81cd01a326cf8554
+    parentId: wrk_7d980d49b7054b038cb19a60215ea361
+    modified: 1712754231998
+    created: 1712754231998
+    name: Voitures
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1712754231998
+    _type: request_group
+  - _id: req_5213cdbc0391418a988eac1f382b51e1
+    parentId: fld_dfaa50d2d0d14fdd81cd01a326cf8554
+    modified: 1712761058199
+    created: 1712735759972
+    url: http://localhost:8080/voitures
+    name: Créer une voiture
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nom" : "Citroën Berlingo",
+        	"vitesse" : 160
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237291
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3822e6c8b1b94854874a2c040eb66d3a
+    parentId: fld_dfaa50d2d0d14fdd81cd01a326cf8554
+    modified: 1712760143913
+    created: 1712734964166
+    url: http://localhost:8080/voitures/54
+    name: Optionnel - Récupérer les infos d'une voiture
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237241
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_13b33f52b7584cf0a8a8d1c0839198cb
+    parentId: fld_dfaa50d2d0d14fdd81cd01a326cf8554
+    modified: 1712759323061
+    created: 1712736639727
+    url: http://localhost:8080/voitures/3
+    name: Optionnel - Modifier les propriétés d'une voiture
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name" : "Citroën BX"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237041
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_484781b95d164596807c2fbf29883d14
+    parentId: fld_dfaa50d2d0d14fdd81cd01a326cf8554
+    modified: 1712759335635
+    created: 1712748931514
+    url: http://localhost:8080/voitures/53
+    name: Optionnel - Supprimer une voiture
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754236941
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6d0c5117c1c44becbee817270aeca5a3
+    parentId: fld_8b1774d1804644e3b1b4ba3b6ccb5686
+    modified: 1712761167785
+    created: 1712759350820
+    url: http://localhost:8080/courses/1
+    name: Récupérer les infos d'une course
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237541
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_8b1774d1804644e3b1b4ba3b6ccb5686
+    parentId: wrk_7d980d49b7054b038cb19a60215ea361
+    modified: 1712759350814
+    created: 1712759350814
+    name: Courses
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684635375627
+    _type: request_group
+  - _id: req_a5fae73486354677bf79fa34644e965e
+    parentId: fld_8b1774d1804644e3b1b4ba3b6ccb5686
+    modified: 1712761094523
+    created: 1712759350823
+    url: http://localhost:8080/courses
+    name: Ajouter une course
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nom" : "Paris-Rouvaix",
+        	"pays" : "France"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237441
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0052c811e2ee4ee6a26e3c5cd3fa31cf
+    parentId: fld_8b1774d1804644e3b1b4ba3b6ccb5686
+    modified: 1712761184637
+    created: 1712759350826
+    url: http://localhost:8080/courses/1/pilote
+    name: Ajouter un pilote à une course
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 1553
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237391
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_91d3a4ac84a5472b972de66a327b7b93
+    parentId: fld_8b1774d1804644e3b1b4ba3b6ccb5686
+    modified: 1712762622151
+    created: 1712759350829
+    url: http://localhost:8080/courses/1/vitesse/50/start
+    name: Démarrer une course
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237366
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b05a577524b34f988a85dd8da827c9c0
+    parentId: fld_8b1774d1804644e3b1b4ba3b6ccb5686
+    modified: 1712761111326
+    created: 1712759350817
+    url: http://localhost:8080/courses
+    name: "[Optionnel] Lister les courses"
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: Insomnia/2023.5.6
+    authentication: {}
+    metaSortKey: -1712754237341
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_a529708ec415ec3d0237186cd0ff263e3682e34f
+    parentId: wrk_7d980d49b7054b038cb19a60215ea361
+    modified: 1712731651527
+    created: 1712731651527
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1712731651528
+    _type: environment
+  - _id: jar_a529708ec415ec3d0237186cd0ff263e3682e34f
+    parentId: wrk_7d980d49b7054b038cb19a60215ea361
+    modified: 1712731651538
+    created: 1712731651538
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
